@@ -3,7 +3,6 @@
 
 const dedupe = (str) => {
   var charChecker = [];
-
   for (var i = str.length - 1; i >= 0; i--) {
     if (charChecker[str.charCodeAt(i)] == null) {
       charChecker[str.charCodeAt(i)] = 1;
